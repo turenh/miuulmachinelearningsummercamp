@@ -19,9 +19,7 @@ df["pclass"].nunique() or df["pclass"].value_counts()
 df[["pclass","parch"]].value_counts()
 
 """ Görev 6: "embarked deişkeninin veri tipine bakınız. Tipini kategori olarak değiştirip tekrar kontrol ediniz"""
-df["embarked"]=pd
-pd=pd.astype("category")
-print(f"Veri tipi: {pd.dtype}")
+df["embarked"]=df["embarked"].astype("category)
 df.info()
 
 
