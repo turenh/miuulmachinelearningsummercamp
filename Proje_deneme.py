@@ -78,7 +78,7 @@ agg_dff.loc[agg_dff["customers_level_based"]=="FRA_IOS_FEMALE_31_40"]
 agg_dff.groupby("SEGMENT").agg({"PRICE":["mean","max","sum"]})
 # Görev 8: Yeni gelen müşterileri sınıflandırıp, ne kadar gelir getirebileceklerini tahmin ediniz.
 #33 yaşında ANDROID kullanan bir Türk kadını hangi segmente aittir ve ortalama ne kadar gelir kazandırması beklenir?
-new_user = "TUR_ANDROİD_FEMALE_19_23"
+new_user = "TUR_ANDROID_FEMALE_19_23"
 # Gelir tahmini yapan bir fonksiyon yazalım:
 def gelir_tahmin(x):
     return agg_dff[agg_dff["customers_level_based"] == x]
