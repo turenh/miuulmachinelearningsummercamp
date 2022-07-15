@@ -73,8 +73,6 @@ pd.qcut(agg_dff["PRICE"], 4 ,labels=["D", "C", "B", "A"])
 agg_dff["SEGMENT"]=pd.qcut(agg_dff["PRICE"], 4 ,labels=["D", "C", "B", "A"])
 #• Segmentleri betimleyiniz (Segmentlere göre group by yapıp price mean, max, sum’larını alınız).
 
-agg_dff.loc[agg_dff["customers_level_based"]=="FRA_IOS_FEMALE_31_40"]
-
 agg_dff.groupby("SEGMENT").agg({"PRICE":["mean","max","sum"]})
 # Görev 8: Yeni gelen müşterileri sınıflandırıp, ne kadar gelir getirebileceklerini tahmin ediniz.
 #33 yaşında ANDROID kullanan bir Türk kadını hangi segmente aittir ve ortalama ne kadar gelir kazandırması beklenir?
