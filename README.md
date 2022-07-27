@@ -1,1 +1,1 @@
-# miuulmachinelearningsummercamp-week2
+# miuulmachinelearningsummercamp
